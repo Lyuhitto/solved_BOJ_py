@@ -7,4 +7,4 @@ n = int(input())
 
 for i in range(n):
   a, b = map(int, sys.stdin.readline().strip().split())
-  print(a + b)
+  print("Case #%d: %d" % (i + 1, a + b))
