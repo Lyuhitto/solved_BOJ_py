@@ -2,7 +2,7 @@ import sys
 
 
 n, x = map(int, sys.stdin.readline().strip().split())
-number = map(int, sys.stdin.readline().strip().split())
+number = list(map(int, sys.stdin.readline().strip().split()))
 result = []
 
 for i in number:
