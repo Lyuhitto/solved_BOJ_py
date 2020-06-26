@@ -11,4 +11,4 @@ for i in number:
         result.append(i)
 for i in result:
     assert type(i) is int, '정수 아님'
-    print(i, end = ' ')
+    print(i, end=' ')
