@@ -6,7 +6,7 @@ def string_iteration():
         time = int(string[0])
         for word in string[2:]:
             print(word * time, end="")
-        print()  
+        print()
         i += 1
 
 
