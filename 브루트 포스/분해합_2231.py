@@ -2,7 +2,7 @@ import time
 
 
 def decomposition(n):
-    min_n = 10 if (n/2) < 10 else n - len(str(n)) * 9
+    min_n = 10 if n < 29 else n - len(str(n)) * 9
     for i in range(min_n, n):
         result = i + sum([int(x) for x in str(i)])
         if result == n:
