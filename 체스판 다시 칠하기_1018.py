@@ -5,7 +5,7 @@ def redraw_chess(height: int, width: int, first_board: list) -> int:
     min_answer = 64
     for x in range(height - 7):
         for y in range(width - 7):
-            tmp_board = [first_board[x + _][y : y + 8] for _ in range(8)]
+            tmp_board = [first_board[x + _][y:y + 8] for _ in range(8)]
             answer = compare_chess(tmp_board)
             if min_answer > answer:
                 min_answer = answer
@@ -41,7 +41,7 @@ def compare_chess(board: list) -> int:
             else:
                 if board[i][j] == board_b:
                     count_b += 1
-                    
+
     return min(count_w, count_b)
 
 
