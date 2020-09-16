@@ -1,6 +1,12 @@
 import sys
 
 
+"""
+We need a 8*8 board in all cases => BRUTE FORSE algorithm
+So, we should divide the original board 8*8 by for-loop
+"""
+
+
 def redraw_chess(height: int, width: int, first_board: list) -> int:
     min_answer = 64
     for x in range(height - 7):
