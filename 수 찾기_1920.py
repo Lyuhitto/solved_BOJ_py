@@ -1,6 +1,7 @@
 from sys import stdin, stdout
 
 
+'''
 binary search(이진탐색)을 이용해도 되지만,
 그저 존재 유무만 알고 싶으므로 in을 사용함
 '''
