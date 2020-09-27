@@ -4,15 +4,16 @@
 """
 
 
-def josephus_problem(people: list, passes: int) -> list:
+def josephus_problem(people: int, passes: int) -> list:
+    people_list = [(_ + 1) for _ in range(people)]
     result = []
-    while people:
+    while people_list:
         for i in range(passes - 1):
-            people.append(people.pop(0))
-        result.append(str(people.pop(0)))
+            people_list.append(people_list.pop(0))
+        result.append(str(people_list.pop(0)))
     return result
 
 
 n, m = map(int, input().split())
-josephus_list = josephus_problem([(i + 1) for i in range(n)], m)
+josephus_list = josephus_problem(n, m)
 print("<", ", ".join(josephus_list), ">", sep="")
