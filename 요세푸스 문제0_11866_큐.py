@@ -1,3 +1,9 @@
+"""
+큐의 원리(FIFO, 선입선출)로 한쪽 끝에서 넣고 다른 한쪽에서 빼는
+연산을 이용함
+"""
+
+
 def josephus_problem(people: list, passes: int) -> list:
     result = []
     while people:
