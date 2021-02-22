@@ -1,3 +1,6 @@
+"""
+TODO 노션에 적기
+"""
 now_h, now_m, now_s = map(int, input().split(':'))
 fire_h, fire_m, fire_s = map(int, input().split(':'))
 
