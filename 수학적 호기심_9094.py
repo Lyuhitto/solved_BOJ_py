@@ -1,6 +1,8 @@
 import sys
 
-
+"""
+TODO
+"""
 r = sys.stdin.readline
 
 for _ in range(int(r())):
